@@ -7,6 +7,7 @@ public class TitleController : MonoBehaviour
 {
     [SerializeField] GameObject TitlePanel;
     [SerializeField] GameObject CourseSelectPanel;
+    [SerializeField] GameObject Panel;
 
     private void Start()
     {

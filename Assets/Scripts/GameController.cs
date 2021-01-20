@@ -23,6 +23,9 @@ public class GameController : MonoBehaviour
     public FollowPlayer followPlayer;
     public CameraController cameraController;
     public TimeController timeController;
+    // AudioSource clickButton;
+    public AudioClip SE;
+
 
     int CameraChanging = 3;
 
@@ -30,6 +33,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1.0f;
+        // clickButton = GetComponent<AudioSource>();
 
         PlayPanel.SetActive(true);
         TimerPanel.SetActive(true);
@@ -42,6 +46,8 @@ public class GameController : MonoBehaviour
 
     public void OnMenuButtonClicked()
     {
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PlayPanel.SetActive(true);
         MenuPanel.SetActive(false);
 
@@ -49,6 +55,8 @@ public class GameController : MonoBehaviour
 
     public void OnPlayButtonClicked()
     {
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PlayPanel.SetActive(false);
         MenuPanel.SetActive(true);
     }
@@ -56,6 +64,8 @@ public class GameController : MonoBehaviour
     public void OnPauseButtonClicked()
     {
         Time.timeScale = 0f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PauseButton.SetActive(false);
         StartButton.SetActive(true);
     }
@@ -63,6 +73,8 @@ public class GameController : MonoBehaviour
     public void OnStartButtonClicked()
     {
         Time.timeScale = 1f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PauseButton.SetActive(true);
         StartButton.SetActive(false);
 
@@ -71,6 +83,8 @@ public class GameController : MonoBehaviour
     public void OnSerchButtonClicked()
     {
         Time.timeScale = 0f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         SerchPanel.SetActive(true);
         MenuPanel.SetActive(false);
         cameraController.SetMapCamera();
@@ -79,6 +93,8 @@ public class GameController : MonoBehaviour
     public void OnNotSerchButtonClicked()
     {
         Time.timeScale = 1f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         SerchPanel.SetActive(false);
         MenuPanel.SetActive(true);
         cameraController.SetPlayerCamera();
@@ -124,6 +140,8 @@ public class GameController : MonoBehaviour
     public void OnSettingButtonClicked()
     {
         Time.timeScale = 0f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         SettingPanel.SetActive(true);
         MenuPanel.SetActive(false);
     }
@@ -131,6 +149,8 @@ public class GameController : MonoBehaviour
     public void OnReMenuBottonClicked()
     {
         Time.timeScale = 1f;
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
         SettingPanel.SetActive(false);
         MenuPanel.SetActive(true);
     }
@@ -154,13 +174,17 @@ public class GameController : MonoBehaviour
     }
 
     public void ReturnTittle()
-    {
+    {        
         SceneManager.LoadScene("titlescene");
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
     }
 
     public void ReturnStart()
     {
         Scene loadScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(loadScene.name);
+        // clickButton.Play();
+        this.GetComponent<AudioSource>().PlayOneShot(SE);
     }
 }

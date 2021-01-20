@@ -34,6 +34,7 @@ public class TimeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (timerflag)
         {
             time += Time.deltaTime;
