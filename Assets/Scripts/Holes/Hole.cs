@@ -30,7 +30,6 @@ public class Hole : MonoBehaviour
 
                 Destroy(other);
                 gameOverDetector.GameOver();
-                // StartCoroutine(ReturnToTitle());
             }
         }
     }
@@ -41,15 +40,4 @@ public class Hole : MonoBehaviour
             isHolding = false;
         }
     }
-
-    /* IEnumerator ReturnToTitle()
-    {
-        counter = 1;
-        while (counter > 0)
-        {
-            yield return new WaitForSeconds(1.0f);
-            counter--;
-        }
-        SceneManager.LoadScene("Title");
-    } */
 }

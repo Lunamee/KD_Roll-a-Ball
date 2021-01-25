@@ -11,8 +11,6 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject MenuPanel;
     [SerializeField] GameObject GameOverPanel;
     [SerializeField] GameObject GameClearPanel;
-    [SerializeField] GameObject SettingPanel;
-    [SerializeField] GameObject SerchPanel;
     [SerializeField] GameObject TimerPanel;
 
     // Button
@@ -20,43 +18,28 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject PauseButton;
 
     public ButtonColorController buttonColorController;
-    public FollowPlayer followPlayer;
-    public CameraController cameraController;
     public TimeController timeController;
-    // AudioSource clickButton;
-    public AudioClip SE;
-
-
-    int CameraChanging = 3;
 
 
     private void Start()
     {
         Time.timeScale = 1.0f;
-        // clickButton = GetComponent<AudioSource>();
 
         PlayPanel.SetActive(true);
         TimerPanel.SetActive(true);
         MenuPanel.SetActive(false);
         GameOverPanel.SetActive(false);
         GameClearPanel.SetActive(false);
-        SettingPanel.SetActive(false);
-        SerchPanel.SetActive(false);
     }
 
     public void OnMenuButtonClicked()
     {
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PlayPanel.SetActive(true);
         MenuPanel.SetActive(false);
-
     }
 
     public void OnPlayButtonClicked()
     {
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PlayPanel.SetActive(false);
         MenuPanel.SetActive(true);
     }
@@ -64,8 +47,6 @@ public class GameController : MonoBehaviour
     public void OnPauseButtonClicked()
     {
         Time.timeScale = 0f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PauseButton.SetActive(false);
         StartButton.SetActive(true);
     }
@@ -73,86 +54,9 @@ public class GameController : MonoBehaviour
     public void OnStartButtonClicked()
     {
         Time.timeScale = 1f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
         PauseButton.SetActive(true);
         StartButton.SetActive(false);
 
-    }
-
-    public void OnSerchButtonClicked()
-    {
-        Time.timeScale = 0f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
-        SerchPanel.SetActive(true);
-        MenuPanel.SetActive(false);
-        cameraController.SetMapCamera();
-    }
-
-    public void OnNotSerchButtonClicked()
-    {
-        Time.timeScale = 1f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
-        SerchPanel.SetActive(false);
-        MenuPanel.SetActive(true);
-        cameraController.SetPlayerCamera();
-    }
-
-    // ピンチイン・アウト実装によりお払い箱にぽーん
-   　/* public void OnExtensionButtonClicked()
-    {
-        if(CameraChanging > 1)
-        {
-            CameraChanging--;
-            if (CameraChanging == 1)
-            {
-                buttonColorController.ButtonHide("ExtensionButton");
-            }
-            else if(CameraChanging == 5)
-            {
-                buttonColorController.ButtonAppear("ReductionButton");
-            }
-            // followPlayer.CameraInOut(followPlayer.CameraChanging);
-            followPlayer.CameraIn(CameraChanging);
-        }
-    }
-
-    public void OnReductionButtonClicked()
-    {
-        if (CameraChanging < 6)
-        {
-            CameraChanging++;
-            if(CameraChanging == 2)
-            {
-                buttonColorController.ButtonAppear("ExtensionButton");
-            }
-            else if (CameraChanging == 6)
-            {
-                buttonColorController.ButtonHide("ReductionButton");
-            }
-            // followPlayer.CameraInOut(followPlayer.CameraChanging);
-            followPlayer.CameraOut(CameraChanging);
-        }
-    } */
-
-    public void OnSettingButtonClicked()
-    {
-        // Time.timeScale = 0f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
-        SettingPanel.SetActive(true);
-        MenuPanel.SetActive(false);
-    }
-
-    public void OnReMenuBottonClicked()
-    {
-        Time.timeScale = 1f;
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
-        SettingPanel.SetActive(false);
-        MenuPanel.SetActive(true);
     }
 
     public void SelectGameOverDescription()
@@ -176,15 +80,11 @@ public class GameController : MonoBehaviour
     public void ReturnTittle()
     {        
         SceneManager.LoadScene("titlescene");
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
     }
 
     public void ReturnStart()
     {
         Scene loadScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(loadScene.name);
-        // clickButton.Play();
-        this.GetComponent<AudioSource>().PlayOneShot(SE);
     }
 }

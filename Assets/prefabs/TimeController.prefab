@@ -46,6 +46,4 @@ MonoBehaviour:
   time: 0
   TimeText: {fileID: 0}
   GoalTimeText: {fileID: 0}
-  gameClearDetector: {fileID: 0}
   timerflag: 1
-  fastestTimeText: {fileID: 0}
