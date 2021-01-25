@@ -62,18 +62,13 @@ public class MainCamera : MonoBehaviour
                     if (heightLimitJudg > (heightMax + 1.0f))
                     {
                         heightLimitJudg = heightMax;
-                        // this.transform.position = new Vector3(0, heightLimitJudg, 0);
-                        // offset = new Vector3(this.transform.position.x, heightLimitJudg, this.transform.position.z) - target.position; 
                     }
                     else if (heightLimitJudg < (heightMin - 1.0f))
                     {
                         heightLimitJudg = heightMin;
-                        // this.transform.position = new Vector3(0, heightLimitJudg, 0);
-                        // offset = new Vector3(this.transform.position.x, heightLimitJudg, this.transform.position.z) - target.position;
                     }
                     else
                     {
-                        // this.transform.Translate(0, 0, cameraHeight);
                         offset = offset + new Vector3(0, cameraHeight, -0.35f * cameraHeight);
                     }
                 }
