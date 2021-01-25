@@ -45,5 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 0}
   player: {fileID: 0}
-  text: {fileID: 0}
   angleOfflet: 0

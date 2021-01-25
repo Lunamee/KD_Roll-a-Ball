@@ -8,7 +8,6 @@ public class CompassTest : MonoBehaviour
 
     [SerializeField] Image image;
     [SerializeField] Transform player;
-    [SerializeField] Text text;
     [SerializeField] float angleOfflet = 0f;
 
     RectTransform rt;
@@ -28,8 +27,6 @@ public class CompassTest : MonoBehaviour
         q = player.rotation * offset;
         q.z = -q.y;
         q.y = 0f;
-
-        text.text = q + "";
 
         rt.rotation = q;
     }
