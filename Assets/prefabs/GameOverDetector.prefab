@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5770848419086991568}
   - component: {fileID: 5770848419086991571}
-  - component: {fileID: 2093722890}
+  - component: {fileID: 1987470035}
   m_Layer: 0
   m_Name: GameOverDetector
   m_TagString: Untagged
@@ -47,7 +47,7 @@ MonoBehaviour:
   hole: {fileID: 0}
   gameController: {fileID: 0}
   SE: {fileID: 8300000, guid: 4a476bec1895c594685bfb30a41bcaca, type: 3}
---- !u!82 &2093722890
+--- !u!82 &1987470035
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,7 +56,8 @@ AudioSource:
   m_GameObject: {fileID: 5770848419086991570}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8683986568777119969, guid: 3fb105c9894cf414393fd368b349b08f,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4a476bec1895c594685bfb30a41bcaca, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

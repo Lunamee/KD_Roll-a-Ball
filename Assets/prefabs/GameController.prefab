@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6689712088158588984}
   - component: {fileID: 6689712088158588985}
-  - component: {fileID: 1090453809}
+  - component: {fileID: 2170861199413922592}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -58,7 +58,7 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   timeController: {fileID: 0}
   SE: {fileID: 8300000, guid: 0058f3d861be4eb48a99888287edac73, type: 3}
---- !u!82 &1090453809
+--- !u!82 &2170861199413922592
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +67,8 @@ AudioSource:
   m_GameObject: {fileID: 6689712088158588987}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8683986568777119969, guid: 3fb105c9894cf414393fd368b349b08f,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 0058f3d861be4eb48a99888287edac73, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -25,11 +25,18 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 5832073076164213598}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: de3100d698f9528499ea8844af0b1cab
+    name: BGMVol
+  - guid: 83c56b2e098b43e4894aa13ea7b230b8
+    name: MasterVol
+  - guid: f87c70ace03fb5c4f812ac24dcd59339
+    name: SEVol
   m_AudioMixerGroupViews:
   - guids:
     - 0e33253270a47cf4e9680db9b06a1a16
@@ -37,7 +44,7 @@ AudioMixerController:
     - 023ab4f99876caf4780239e277b7c3e8
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: 5832073076164213598}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -79,10 +86,12 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: GameSnoundshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: bde55335ba5b26a4992c5a903b7a9590
-  m_FloatValues: {}
+  m_FloatValues:
+    de3100d698f9528499ea8844af0b1cab: 0
+    f87c70ace03fb5c4f812ac24dcd59339: 0.04171297
   m_TransitionOverrides: {}
 --- !u!244 &2151763937736690045
 AudioMixerEffectController:
@@ -117,6 +126,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &5832073076164213598
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OptionSoundShot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: e68a09721ac217046ac573c56b87d956
+  m_FloatValues:
+    de3100d698f9528499ea8844af0b1cab: -0.39762527
+    f87c70ace03fb5c4f812ac24dcd59339: 0.04171297
+    83c56b2e098b43e4894aa13ea7b230b8: -10.345207
+  m_TransitionOverrides: {}
 --- !u!243 &8683986568777119969
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

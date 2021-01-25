@@ -139,7 +139,7 @@ public class GameController : MonoBehaviour
 
     public void OnSettingButtonClicked()
     {
-        Time.timeScale = 0f;
+        // Time.timeScale = 0f;
         // clickButton.Play();
         this.GetComponent<AudioSource>().PlayOneShot(SE);
         SettingPanel.SetActive(true);

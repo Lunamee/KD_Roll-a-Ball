@@ -2381,18 +2381,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705982998}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &733605453 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5060158604583617819, guid: 23caefb46c179ab43adeeec3be44eae3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1479784722}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 519453ff0f05c6a45b2cc8016a388066, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &735031391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,11 +3144,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 493710143}
-    - target: {fileID: 5042408293562807612, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5042408293687391241, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3281,21 +3264,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5042408294067721843, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
-        type: 3}
-      propertyPath: lookatgoal
-      value: 
-      objectReference: {fileID: 733605453}
-    - target: {fileID: 5042408294067721854, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 742463185}
-    - target: {fileID: 5042408294067721854, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
-        type: 3}
-      propertyPath: cursor
-      value: 
-      objectReference: {fileID: 823556303}
     - target: {fileID: 5042408294251667404, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3336,11 +3304,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 493710143}
-    - target: {fileID: 5042408295343368575, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5042408295450384025, guid: 1f8858bda68d60c4fa64d7a9d401ed2d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
