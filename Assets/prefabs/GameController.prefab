@@ -51,5 +51,4 @@ MonoBehaviour:
   StartButton: {fileID: 0}
   PauseButton: {fileID: 0}
   buttonColorController: {fileID: 0}
-  cameraController: {fileID: 0}
   timeController: {fileID: 0}

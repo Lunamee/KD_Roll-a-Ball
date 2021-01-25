@@ -18,7 +18,6 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject PauseButton;
 
     public ButtonColorController buttonColorController;
-    public CameraController cameraController;
     public TimeController timeController;
 
 
